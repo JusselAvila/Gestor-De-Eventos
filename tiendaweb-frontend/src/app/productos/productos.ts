@@ -1,9 +1,12 @@
 import {Component, inject} from '@angular/core';
 import { ApiClient } from '../core/http/api-client';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-productos',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './productos.html',
 })
 export class Productos {
@@ -18,18 +21,6 @@ export class Productos {
       next: data => this.productos = data,
       error: error => console.error('Error al obtener productos', error)
     });
-
-    // this.api.get<Producto[]>(this.url+'/lista-productos').subscribe({
-    //   next: data => {
-    //     this.productos = data;
-    //     console.log('data');
-    //     console.log(data);
-    //     console.log('productos');
-    //     console.log(this.productos);
-    //   },
-    //   error: error => console.error('Error al obtener productos', error)
-    // });
-
   }
 }
 
