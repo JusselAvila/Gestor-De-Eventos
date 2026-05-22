@@ -1,0 +1,75 @@
+######################################
+# GENERAL
+######################################
+.DS_Store
+Thumbs.db
+
+######################################
+# .NET
+######################################
+bin/
+obj/
+out/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS / VSCode
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+######################################
+# ASP.NET
+######################################
+appsettings.Development.json
+appsettings.Local.json
+
+######################################
+# Angular / Node
+######################################
+node_modules/
+dist/
+.tmp/
+.out/
+
+# Angular cache
+.angular/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+######################################
+# ENV FILES
+######################################
+.env
+.env.*
+
+######################################
+# COVERAGE
+######################################
+coverage/
+
+######################################
+# BUILD OUTPUTS
+######################################
+build/
+publish/
+
+######################################
+# OPTIONAL (si usas SQLite u otros locales)
+######################################
+*.db
+*.sqlite
