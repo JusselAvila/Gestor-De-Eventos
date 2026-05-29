@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
-import {Productos} from './productos/productos';
-import {Producto} from './productos/producto';
+import { LoginComponent } from './auth/login/login.component';
+import { RegistroComponent } from './auth/registro/registro.component';
 
+// app.routes.ts
 export const routes: Routes = [
-  { path: '', redirectTo: 'productos', pathMatch: 'full' },
-  { path: 'productos', component: Productos },
-  { path: 'producto', component: Producto }
+  { path: 'login', component: LoginComponent },
+  { path: 'registro', component: RegistroComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
